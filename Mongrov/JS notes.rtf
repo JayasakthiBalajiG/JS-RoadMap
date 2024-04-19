@@ -1,0 +1,239 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2757
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20240\viewh14840\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf0 Js engine uses stack memory\
+var let const \
+var doesn\'92t follow scope stuffs\
+var can be used for hoisting; hoisting is using a variable before declaration\
+const variables cannot be reassigned, but elements can be pushed, changes etc..,\
+\
+Operators - completed, short hand assignment operator\
+? - ternary operator  \
+\
+dummy &&= 67; previously assigned value is true then second value is assigned \
+||= previously assigned value is true or false, 2nd value is assigned\
+??= 1st value is not assigned or undefined, 2nd value is assigned\
+\
+Pure functions - always return same output if same input is passed\
+\
+Loops:\
+for\
+For of\
+For in loops - used to iterate inside an \
+for(key in object_name)\
+\
+In js we can assign a function to a variable\
+\
+toPrecsion(//5) - used to print a decimal values of the number, 5 decimal values will be printed of the number.\
+\
+Class - super keyword used to call the parent\'92s class constructor, methods.\
+new keyword - used to create instance of a class \
+\
+\
+Arrays\
+Mutable to the parent array\
+sort() - sort an array - stores in a sequential manner - ok for strings but stringed nos can\'92t work with only the sort() - a,b arguments are needed\
+toSorted() - to create a new array and stores in the sorted format\
+push() - add elements at the ends\
+shift() - remove first element from the array\
+unshift() - add anything at the start of the array - and if logged it - returns the length of the array after modification.\
+includes() - search item as a parameter - gives true or false\
+splice() - removes the element from the parent array => splice(index, how_many_elements_to_delete)\
+assigns() - assigning 2 or more objs to new object\
+join() - concats all the array elements into one element which can assigned to a variable\
+every() - returns bool value if all the conditions satisfy\
+some() - returns bool value if anyone condition satisfies\
+indexOf(search_element, from_index_array) - passed 2 arguments \
+findIndex() - returns the index of the element when passed\
+fill() - fills the empty array with the argument passed inside it\
+\
+Immutable to the parent array\
+slice(start, end) - divides the array and assigns to new array\
+concat()\
+map() - maps arr to new arr based on instructions\
+filter() - assigns arr to new arr with conditions \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 reduce
+\f0\b0 () - 2 parameters - 1st parameter is a function(), 2nd parameter is the start value of the assigning variable inside the function\
+arr_name.reduce(function(assigning_value, iterable_element)\{\
+return assign_value operation arr.key \
+\}, start_value)\
+\
+Shallow clone and deep clone - shallow does not clone inherited child but deep does\
+\
+Set - stores the values in hash table manner\
+\
+Arrays and set - stores values \
+Maps and objects - stores in key value pairs\
+\
+Js class is not an obj its a template for obj\
+\
+Snippets that wait or block the execution to fetch - sync or blocked way\
+Js snippets will execute till the end instead of waiting to the I/O or HHTP requests - non blocking way -async\
+\
+Call backs - a function used in AJAX requests and timeout (traditional way of handling asynchronous function\
+Promise - is an object (pending, fulfilled, rejected) - resolve, reject - function which implements another function inside it by having parameters like resolve, reject\
+.then()\
+.catch()\
+\
+Async - used for concurrency\
+Async - before a function makes the func to return a promise\
+.then()\
+.catch()\
+\
+await can be only used in async fun - pauses the execution and waits for the resolved promise.\
+\
+Prototype - a prototype object that inherits the objects like array, objects- a property allows to add new properties(arguments) and methods to object constructors.\
+\
+AJAX - Async js and XML - can use this to make a call with the normal execution - done with fetch() API\
+\
+
+\f1\b Comparison:
+\f0\b0 \
+
+\f1\b Fetch
+\f0\b0  promises only reject when there is interruption like network error and so on\'85\
+
+\f1\b XMLHttp
+\f0\b0  API - XML data storage - like html tags as column name - XMLHttpRequest() - works with Callbacks - returns only the data\
+
+\f1\b Fetch
+\f0\b0  API -JSON - key value pairs - works with Promises - returns both data and information of the response object - response obj should be converted to json for fetching like response.json()\
+
+\f1\b Axios
+\f0\b0  library is promise based HTTP client for node and the browser - ease of use, can be used both in browser and in server\
+xhr? - for API fetch\
+\
+Headers - passing meta data to API for helping the server to understand what type of request is sent\
+GET POST PUT DELETE\
+even though the fetching is not done the fetch function works till the end until there is a network interruption.\
+\
+\
+To change the data in database using json we need to add headers and stringify the json to make the successful change in the body parameter.\
+XML readyState values:\
+0 -unsent\
+1- opened \
+2 - headers received\
+3 - loading\
+4- done\
+\
+Spread and rest operators\
+Template literals - usage of $ in log \
+\
+Try catch throw finally\
+throw - throw \'93anything to get printed\'94  - can be used in control statements.\
+Syntax error, Reference error - occurs when a variable is used as ref when not declared (let x=0; y = x+x; //y is not declared), TypeError()\
+\
+\
+Immutability is important to have a consistency and important in state management\
+Primitive types are immutable, but arrays, objects are mutable\
+Can make arrays and objects immutable by using spread operators.\
+arr = [\'85\'85]\
+arr.push(8) - mutability happens so,\
+arr[\'85arr,8]\
+\
+When an array with flash elements are pushed to a new array - both the true and false values are pushed, but if the elements are checked whether it is truthy or filtered only true values are pushed.\
+\
+Higher order functions - takes one or more funcs as arguments and returns also a function. Eg: map(), filter(), reduce(), sort() - as these functions take a another function as argument inside them.\
+Callback fn - is passed as argument to a function and executes when called inside the function where passed.\
+\
+arrow fns - 7 forms of declarations\
+\'93use strict\'94 - if this literal is used undeclared variables cannot be used \
+\
+\
+Event loop in js - web API -> call queue -> call stack -> repeat\
+\
+Cookies - 1st and 3rd party cookies - 1st -> website and browser, 3rd -> to advertisers\
+Local storage and session storage - main diff is session of the page in the browser.\
+\
+\
+Cross site scripting XSS - hacker executes vulnerable script in the user\'92s browser to take sensitive data\
+Cross site request forgery - tricks the user to perform unwanted actions\
+\
+\
+\
+React Native\
+ESLint - open source project helps to fix the problems\
+metro config file - converts js to native application - compiles while converts and shows errors if exists.\
+\
+npx react-native init <name>\
+npx react-native run-ins \
+\
+\
+\
+\
+\
+Questions:\
+1. Function are the blocks which returns something, procedures just executes set of instructions\
+2. Function declarations are the normal functions with the function names, but function expressions are a variable is declared for a function and function usage is done through variable name\
+3. Named functions are like function expressions - a variable is declared for a function anonymously\
+4. Anonymous functions - can\'92t be hoisted - immediately invoked function expressions (IIFE) \
+5. Function call\
+    Method call\
+    Constructor call\
+    Via call and apply\
+6. A function can be called or used before declaration or set of instructions given can be given after calling\
+\
+7. Local, global, block - inside while, for loops, functional - inside functions scopes\
+8. Global is declared globally and local inside the function or block cannot be accessed outside.\
+9. 
+\f1\b Lexical
+\f0\b0  scope - makes the inner function to access the member variables or member functions of the parent but cannot be accessed when parent calls after closed.\
+10. 
+\f1\b Closures
+\f0\b0  are functions us the members of parent classed even after the parent class is closed.\
+11. Closures encapsulates all the members within a function - helps in code structure\
+12. \
+\
+13. Function parameters and arguments - arguments (down) are passed to function parameters\
+14. Same as 13\
+15. Default parameter function(a=1,b=9)\
+16. Rest parameters - passing more number of arguments using \'85 method\
+17.  Arguments object - used for referring the arguments passing inside the function -> arguments[index_value] of passing value\
+18. Seen in 17 \
+\
+19. Higher order fn - takes other fns as arguments and also returns a function inside it\
+20. Callbacks - async - takes fns as arguments \
+21. \
+22. shows only necessary stuffs, helps in reusability \
+23. map(), filter(), reduce(), sort() - as these functions take a another function as argument inside them\
+\
+24. Concise way of writing functions, arrow fns are anonymous functions, can be easily assigned to any variable\
+25. 7 types of declaration\
+26. \
+\
+\
+\
+\
+Arrays\
+1. passing array with spread operator\
+2. Normal assign vs rest method assign\
+3. Refer notes above - array functions\
+4. Mutable functions - changes the elements of the parent, immutable doesn\'92t change - refer array functions above\
+5. modify the same passed array and log it outside the function\
+6. pure fns - doesn\'92t change output, only depends on the arguments passed.\
+7. Array destructing - \'85 spread operator\
+8. Passing the array using spread operator\
+9. new_arr = old_arr.map(instruction), old_arr.filter(condition or function) reduce() - see fns above \
+10. Pitfalls - arr mutation - can send elements to the calling area with new arr, edge errors - empty array or length error\
+11. Arrays use numerous built -in fns - like the above mentioned array functions. Array like objects don\'92t have built in functions - even to access traditional for loop to be used\
+12. Multidimensional array - with spread operator, push() with spread, accessing with index [row_no][element_index]\
+\
+Objects:\
+13. 1. passing obj as normal variable and accessing object with obj_name.property_name 2. Passing obj elements while creating instance and accessing with this keyword.\
+14.\
+\
+\
+\
+\
+\
+\
+\
+\
+}
