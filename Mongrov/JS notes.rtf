@@ -2,7 +2,7 @@
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww20240\viewh14840\viewkind0
+\paperw11900\paperh16840\margl1440\margr1440\vieww19940\viewh13440\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs22 \cf0 Js engine uses stack memory\
@@ -33,6 +33,7 @@ toPrecsion(//5) - used to print a decimal values of the number, 5 decimal values
 Class - super keyword used to call the parent\'92s class constructor, methods.\
 new keyword - used to create instance of a class \
 \
+Constructors are used to create new obj and set of values for the pre existing properties\
 \
 Arrays\
 Mutable to the parent array\
@@ -134,7 +135,7 @@ Syntax error, Reference error - occurs when a variable is used as ref when not d
 Immutability is important to have a consistency and important in state management\
 Primitive types are immutable, but arrays, objects are mutable\
 Can make arrays and objects immutable by using spread operators.\
-arr = [\'85\'85]\
+arr = [\'85]\
 arr.push(8) - mutability happens so,\
 arr[\'85arr,8]\
 \
@@ -145,6 +146,21 @@ Callback fn - is passed as argument to a function and executes when called insid
 \
 arrow fns - 7 forms of declarations\
 \'93use strict\'94 - if this literal is used undeclared variables cannot be used \
+\
+
+\f1\b Recursion
+\f0\b0  - 3 main factors\
+1. Function definition\
+2. Base condition\
+3. Recursive call\
+Recursion is simple - less time complexity but occupies more space - for DOM and file directory\
+
+\f1\b => 
+\f0\b0 Recursion is done with stacks - when fns calls itself, a new stack frame is created called as 
+\f1\b stack
+\f0\b0 , when it reaches to the base case, the stack pops. If base case is not reasonable and stack memory got deepened or filled 
+\f1\b stackoverflow
+\f0\b0  error happens\
 \
 \
 Event loop in js - web API -> call queue -> call stack -> repeat\
@@ -204,10 +220,25 @@ Questions:\
 22. shows only necessary stuffs, helps in reusability \
 23. map(), filter(), reduce(), sort() - as these functions take a another function as argument inside them\
 \
-24. Concise way of writing functions, arrow fns are anonymous functions, can be easily assigned to any variable\
+Arrow vs normal - arrow cannot be hoisted, constructors cannot be used\
+24. Concise way of writing functions, arrow fns are anonymous functions, can be easily assigned to any variable - lambda fns\
 25. 7 types of declaration\
-26. \
+26. use of 
+\f1\b this in arrow fns
+\f0\b0  keyword for for accessing the closure values - values of the parent class \
+27. Simpler use case - non complex places\
+28. \
 \
+29. A function that calls itself until the condition satisfies/false - could be condition/ loops\
+30. Recursion with looping and with function call itself\
+31. In recession explanation up\
+32. https://www.tutorchase.com/answers/ib/computer-science/how-can-recursion-lead-to-stack-overflow-errors - see recursion explain\
+33. Done with factorial problem\
+\
+34. This vs super see\
+\
+\
+39. Prototypes helps in inheritance in js - function already declared and the properties can be added later with the prototype\
 \
 \
 \

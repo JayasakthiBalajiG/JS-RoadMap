@@ -78,3 +78,45 @@ console.log(objPassing(obj1))
 
 tat=(a,b)=> a*b;
 console.log(tat(2, 3));
+
+function recurDemoLoop(num) {
+  let fact = 1;
+  for (let i = num; i > 0; i--) {
+    fact = fact * i;
+  }
+  return fact;
+}
+console.log(recurDemoLoop(5));
+
+
+function recurDemoRecur(num){
+  if(num==0) return 1 //base case
+  let fact = num*recurDemoRecur(num-1) // recursion case
+  return fact;
+}
+console.log(recurDemoRecur(5));
+
+function user(name, age){
+  this.name = name;
+  this.age = age;
+  this.online =false
+  return `${name}, ${age}`;
+}
+user.prototype.login = function(){
+  this.online =true
+  console.log(this.name);
+}
+
+//function inheritance
+function admin(...args){
+  user.apply(this, args);
+  this.role ='super admin'
+}
+
+admin.prototype = Object.create(user.prototype);
+
+let us = new user("gundu", 122)
+console.log(us);
+let ad = new admin("amin",123)
+console.log(ad);
+
