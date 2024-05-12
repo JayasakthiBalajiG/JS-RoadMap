@@ -120,3 +120,5 @@ console.log(us);
 let ad = new admin("amin",123)
 console.log(ad);
 
+
+

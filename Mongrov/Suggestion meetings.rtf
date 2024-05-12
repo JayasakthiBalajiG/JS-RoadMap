@@ -2,7 +2,7 @@
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww18160\viewh14960\viewkind0
+\paperw11900\paperh16840\margl1440\margr1440\vieww22940\viewh15240\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
 \f0\fs20 \cf0 Suggestions:\
@@ -69,6 +69,154 @@ Closures\
 50. Normal logic\
 \
 \
+
+\f1\b April 9th 2024\
+Basics of array, objects, scope, closures etc..,\
+
+\f0\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs22 \cf0 Questions:\
+1. Function are the blocks which returns something, procedures just executes set of instructions\
+2. Function declarations are the normal functions with the function names, but function expressions are a variable is declared for a function and function usage is done through variable name\
+3. Named functions are like function expressions - a variable is declared for a function anonymously\
+4. Anonymous functions - can\'92t be hoisted - immediately invoked function expressions (IIFE) \
+5. Function call\
+    Method call - calls inside obj\
+    Constructor call - calls with this keyword\
+    Via call and apply - function_name.call(), fn_name.apply()\
+6. A function can be called or used before declaration or set of instructions given can be given after calling\
+\
+7. Local, global, block - inside while, for loops, functional - inside functions scopes\
+8. Global is declared globally and local inside the function or block cannot be accessed outside.\
+9. 
+\f1\b Lexical
+\f0\b0  scope - makes the inner function to access the member variables or member functions of the parent but cannot be accessed when parent calls after closed.\
+10. 
+\f1\b Closures
+\f0\b0  are functions us the members of parent classed even after the parent class is closed.\
+11. Closures encapsulates all the members within a function - helps in code structure\
+12. \
+\
+13. Function parameters and arguments - arguments (down) are passed to function parameters\
+14. Same as 13\
+15. Default parameter function(a=1,b=9)\
+16. Rest parameters - passing more number of arguments using \'85 method\
+17.  Arguments object - used for referring the arguments passing inside the function -> arguments[index_value] of passing value\
+18. Seen in 17 \
+\
+19. Higher order fn - takes other fns as arguments and also returns a function inside it\
+20. Callbacks - async - takes fns as arguments \
+21. \
+22. shows only necessary stuffs, helps in reusability \
+23. map(), filter(), reduce(), sort() - as these functions take a another function as argument inside them\
+\
+Arrow vs normal - arrow cannot be hoisted, constructors cannot be used\
+24. Concise way of writing functions, arrow fns are anonymous functions, can be easily assigned to any variable - lambda fns\
+25. 7 types of declaration\
+26. use of 
+\f1\b this in arrow fns
+\f0\b0  keyword for for accessing the closure values - values of the parent class \
+27. Simpler use case - non complex places\
+28. \
+\
+29. A function that calls itself until the condition satisfies/false - could be condition/ loops\
+30. Recursion with looping and with function call itself\
+31. In recession explanation up\
+32. https://www.tutorchase.com/answers/ib/computer-science/how-can-recursion-lead-to-stack-overflow-errors - see recursion explain\
+33. Done with factorial problem\
+\
+34.this vs super see\
+\
+\
+39. Prototypes helps in inheritance in js - function already declared and the properties can be added later with the prototype. fun_name.prototype.property_name = function()\{\}\
+40. class based inheritance - object oriented, prototype inheritance - to create similar objects with slight changes\
+41. Done in TestDemo.js\
+42. \
+\
+49. Usage of local variables, loop optimisation, variables declaration and memory allocation\
+\
+Arrays\
+1. passing array with spread operator\
+2. Normal assign vs rest method assign\
+3. Refer notes above - array functions\
+4. Mutable functions - changes the elements of the parent, immutable doesn\'92t change - refer array functions above\
+5. modify the same passed array and log it outside the function\
+6. pure fns - doesn\'92t change output, only depends on the arguments passed.\
+7. Array destructing - \'85 spread operator\
+8. Passing the array using spread operator\
+9. new_arr = old_arr.map(instruction), old_arr.filter(condition or function) reduce() - see fns above \
+10. Pitfalls - arr mutation - can send elements to the calling area with new arr, edge errors - empty array or length error\
+11. Arrays use numerous built -in fns - like the above mentioned array functions. Array like objects don\'92t have built in functions - even to access traditional for loop to be used\
+12. Multidimensional array - with spread operator, push() with spread, accessing with index [row_no][element_index]\
+\
+Objects:\
+13. 1. passing obj as normal variable and accessing object with obj_name.property_name 2. Passing obj elements while creating instance and accessing with this keyword.\
+\
+\
+\
+\
+38 . Memory leaks can be occurred due to inattentive declaration, stack overflow, over usage of global variables\
+39. Private variables could be created either with 
+\f1\b closures
+\f0\b0  and usage of 
+\f1\b #
+\f0\b0  in constructor usage\
+\
+42. Closures leads to memory leaks when outer variable is referenced to the inner one, when large about of space is assigned which is added as garbage being referenced
+\fs20 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 47. 
+\fs22 To release the acquired memory in js we could use delete for object properties, but for variables and array, 
+\f1\b null
+\f0\b0  to be initiated to the name of the variable; variable_name = null \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b \cf0 \
+22nd Apr 2024\
+Basics of React native\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b0\fs20 \cf0 1. React native is a react js framework for mobile application development, uses native components as building blocks\
+2. React JS uses web components, Native use native components as building blocks\
+3. Virtual DOM - JS notes, Diffing and Reconcilliation\
+4. Code reusability, real time faster reloading, usage of virtual DOM\
+5. Applications\
+6. Architecture - JS notes\
+7. Native apps - specific for platforms has more advantage for accessing the internal features of the device and platform\
+    Hybrid apps - combination of native and web apps - limited access of the platform and devices\
+    React native apps - native apps for android and iOS - advantages - accessing features, lessen dev etc..,\
+8. Usage of platform module and platform specific file extensions - selection of platform (android/iOS) and versions\
+9. JSX - JS XML - consists of state, props, native core components.\
+10. JS engines for interprets and executes js code\
+    V8 for google chrome\
+    Spider monkey for Firefox\
+    JavaScriptCore for safari - default js engine optimised for mobile devices and efficient execution of js code\
+\
+\
+20.
+\f1\b  Class component
+\f0\b0  - stateful components - usage of render() to define UI inside a return() - manage their own state - keeps track on the changing data - 
+\f1\b mainly for the state management or dealing with complex UI log
+\f0\b0 \
+      
+\f1\b Functional component
+\f0\b0  - stateful components - don\'92t have their 
+\f1\b own internal state
+\f0\b0  just accepts the props with the usage of react hooks like \'91
+\f1\b useState
+\f0\b0 \'92 - direct return() to define UI - 
+\f1\b solely dealing with UI and do not require state management
+\f0\b0 \
+\
+\
+39. 
+\f1\b\fs22 State
+\f0\b0  - the data to be changed is set as state - in react state refers to a object that determines how the component renders and behaves\
+
+\fs20 State management - \
+\
 \
 
 \f1\b Arr to object 
@@ -79,14 +227,16 @@ Closures\
 \
 
 \f1\b Set to arr 
-\f0\b0 = spread operator, Array.from(set_name)\
+\f0\b0 = spread operator, Array.from(set_name)g\
 
 \f1\b Arr to set 
 \f0\b0 = declaration = new Set(arr_name)\
 \
+Checking array = Array.isArray(arr_name) returns bool\
+Checking obj = typeof obj_name === true\
+\
 \
 12 15 16 29 37 38 40 44	\
-\
 \
 \
 To see again:\

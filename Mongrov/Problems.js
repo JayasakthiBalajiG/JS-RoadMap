@@ -13,6 +13,7 @@ let obj3 = {
   ...obj2,
 };
 console.log("Spread", obj3);
+
 let objCat = Object.assign(obj1, obj2);
 console.log("Assign", objCat);
 
@@ -76,8 +77,8 @@ let arrOne = [
   ["key3", "balaji"],
   ["key4", "one"],
 ];
-let sortArray = arrOne.sort();
-console.log(sortArray);
+let sortArray = arrOne.sort(function (a, b) {return a.values - b.values});
+console.log("sort with values",sortArray);
 
 console.log("values", Object.values(myObject));
 

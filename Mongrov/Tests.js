@@ -29,9 +29,9 @@ greet.call();
 greet.apply();
 
 function outer() {
-  let number = 9876;
+  let number = [12,4,42,452,36,5];
   function inner() {
-    console.log(number);
+    console.log("closure",number);
   }
   inner();
 }
@@ -57,6 +57,7 @@ arr1 = [
     age: "16",
   },
   1232323,
+  "happy"
 ];
 arr2 = [
   {
@@ -64,9 +65,10 @@ arr2 = [
     pin: 654321,
   },
   4567890,
-  "sad",
+  "sad"
 ];
 
-let mergeArr = Object.assign(...arr1, ...arr2);
-console.log(mergeArr);
+
+let mergeArr = [...arr1, ...arr2]
+console.log("merged",mergeArr);
 
